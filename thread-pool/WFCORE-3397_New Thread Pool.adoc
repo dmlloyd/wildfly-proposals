@@ -206,13 +206,13 @@ The following capabilities will be reused or introduced:
 |Provided by
 |Existing
 
-|jboss.executor
+|org.wildfly.executor
 |ExecutorService
 |thread-pool +
 scheduled-thread-pool
 |no
 
-|jboss.executor.scheduled
+|org.wildfly.scheduled-executor
 |ScheduledExecutorService
 |scheduled-thread-pool
 |no
