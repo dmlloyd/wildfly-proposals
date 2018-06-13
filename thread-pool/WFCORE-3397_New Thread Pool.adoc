@@ -177,6 +177,7 @@ changes are integrated:
 * Batch
 * Connector
 * Clustering
+* EJB
 
 === Phase 3: Subsystem
 
@@ -191,7 +192,7 @@ all the other resource types.
 
 ==== Approach 2: A new subsystem
 
-A new thread pool subsystem is introduced with `thread-factory`, `thread-pool`,
+A new thread pool subsystem is introduced with `thread-pool`
 and `scheduled-thread-pool` elements.
 
 ==== Common aspects to both approaches
@@ -205,21 +206,17 @@ The following capabilities will be reused or introduced:
 |Provided by
 |Existing
 
-|jboss.executor
+|org.wildfly.executor
 |ExecutorService
 |thread-pool +
 scheduled-thread-pool
 |no
 
-|jboss.executor.scheduled
+|org.wildfly.scheduled-executor
 |ScheduledExecutorService
 |scheduled-thread-pool
 |no
 
-|jboss.thread.factory
-|ThreadFactory
-|thread-factory
-|no
 |===
 
 === Phase 4: Final integration
